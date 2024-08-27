@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert array</title>
+  </head>
+  <body>
+    <input type="text" id="hi" placeholder="enter position" />
+    <input type="text" id="mp" placeholder="enter new eelwment" />
+    <button onclick="np()">Insert</button>
+    <script>
+      // let data =[10,20,5,1,23,22,65];
+      // let np=70;
+      // let position=2;
+      // for(let i=data.length -1;i>=0;i--){
+      //     console.log(data[i])
+      //     if (i>=position){
+      //         data[i+1]=data[i];
+      //         if(i==position){
+      //             data[i]=np;
+      //         }
+
+      //     }
+      // }
+      //console.log(data)
+      // let rahul = () => {
+      //   let data = [10, 20, 5, 1, 23, 22, 65];
+      //   let np = document.getElementById("mp").value;
+      //   let position = document.getElementById("hi").value;
+      //   for (let i = data.length - 1; i >= 0; i--) {
+      //     console.log(data[i]);
+      //     if (i >= position) {
+      //       data[i + 1] = data[i];
+      //       if (i == position) {
+      //         data[i] = np;
+      //       }
+      //     }
+      //   }
+      //   console.log(data);
+      // };
+      let np = () => {
+        let r = [1, 2, 3, 4, 6, 58, 666];
+        let a = document.getElementById("mp").value;
+        let h = document.getElementById("hi").value;
+        for (let i = r.length - 1; i >= 0; i--) {
+          console.log(r[i]);
+          if (i >= h) {
+            r[i + 1] = r[i];
+            if (i == h) {
+              r[i] = a;
+            }
+          }
+        }
+        console.log(r);
+      };
+      let p = [1, 5, 6, 4, 9, 7554, 6, 64, 64, 64, 6];
+      let l = 786;
+      let t = 5;
+      for (let i = p.length - 1; i >= 0; i--) {
+        console.log(p[i]);
+        if (i >= t) {
+          p[i + 1] = p[i];
+        }
+        if (i == t) {
+          p[i] = l;
+        }
+      }
+      console.log(p);
+    </script>
+  </body>
+</html>

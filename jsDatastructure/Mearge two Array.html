@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mearge two Array</title>
+  </head>
+  <body>
+    <script>
+      //   let data = [1, 2, 5, 6, 89, 7, 63];
+      //   let data2 = [3, 6, 5, 9, 7, 9, 6, 4];
+      //   let data4 = 90;
+      //   let data3 = [];
+      //   for (let i = 0; i < data.length; i++) {
+      //     data3[i] = data[i];
+      //   }
+      //   for (let i = 0; i < data2.length; i++) {
+      //     data3[data.length + i] = data2[i];
+      //   }
+      //   for (let i = data3.length; i <= 0; i++) {
+      //     if (i >= data3) {
+      //       data3[i + 1] = data3[i];
+      //     }
+      //     if (i == data3) {
+      //       data3[i] = data4;
+      //     }
+      //   }
+      //   console.log(data4);
+      //document.write(data3);
+
+      //   let str = "singh";
+      //   let reversed = "";
+      //   for (let i = str.length - 1; i >= 0; i--) {
+      //     reversed += str[i];
+      //   }
+      //   document.write(reversed);
+      let a = [1, 2, 364];
+      let b = [0, 2, 3, 6, 5, 4];
+      let c = [];
+      let d = [];
+      let e = 1;
+      e = parseInt(e);
+      //   for (let i = 0; i < a.length; i++) {
+      //     c[i] = a[i];
+      //   }
+      //   for (let i = 0; i < b.length; i++) {
+      //     c[a.length + i] = b[i];
+      //   }
+      for (let i = e; i < a.length - 1; i++) {
+        a[i] = a[i + 1];
+      }
+      a.length = a.length - 1;
+      //   for (let i = c.length - 1; i >= 0; i--) {
+      //     d += c[i];
+      //   }
+      document.write(c);
+      document.write(a);
+      //   document.write(d);
+    </script>
+  </body>
+</html>

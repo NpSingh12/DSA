@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="ta.css" />
+    <title>Taj Hotels</title>
+  </head>
+  <body>
+    <div class="navbar" id="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()"
+        >&#9776;</a
+      >
+    </div>
+
+    <header id="home">
+      <div class="header-content">
+        <h1>Welcome to Taj Hotels</h1>
+        <p>Experience Luxury and Tradition</p>
+      </div>
+    </header>
+
+    <section id="special-offer">
+      <div class="offer">
+        <h2>Special Offer</h2>
+        <p>Book now and get 20% off on all room types!</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <section id="hotel1">
+      <div class="feature">
+        <h1>Taj Hotel 1</h1>
+        <a href="hotel1.html">
+          <img src="images/hotel1.jpg" alt="Taj Hotel 1" />
+        </a>
+        <p>Description and details about Taj Hotel 1.</p>
+        <a href="hotel1.html" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <section id="hotel2">
+      <div class="feature">
+        <h1>Taj Hotel 2</h1>
+        <a href="hotel2.html">
+          <img src="images/hotel2.jpg" alt="Taj Hotel 2" />
+        </a>
+        <p>Description and details about Taj Hotel 2.</p>
+        <a href="hotel2.html" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <section id="hotel3">
+      <div class="feature">
+        <h1>Taj Hotel 3</h1>
+        <a href="hotel3.html">
+          <img src="images/hotel3.jpg" alt="Taj Hotel 3" />
+        </a>
+        <p>Description and details about Taj Hotel 3.</p>
+        <a href="hotel3.html" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>About Us</h3>
+            <p>
+              Experience luxury and tradition with Taj Hotels. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Our Locations</h3>
+            <a href="#">New York</a>
+            <a href="#">Los Angeles</a>
+            <a href="#">Paris</a>
+            <a href="#">Tokyo</a>
+          </div>
+          <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="#">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="box">
+            <h3>Connect With Us</h3>
+            <a href="#">Subscribe to Our Newsletter</a>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      function toggleNavbar() {
+        var x = document.getElementById("navbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>
