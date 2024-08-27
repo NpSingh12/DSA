@@ -44,7 +44,7 @@ int main()
     x = x / 10;
     // i++;
   }
-  cout << ans << endl;*/
+  cout << ans << endl;
   int star;
   cin >> star;
   int row = 1;
@@ -64,5 +64,5 @@ int main()
     }
     cout << endl;
     row = row + 1;
-  }
+  }*/
 }
