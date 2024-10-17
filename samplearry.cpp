@@ -1,3 +1,4 @@
+// total no of arrray;
 #include <iostream>
 using namespace std;
 int firstouccurence(int arr[], int size, int key)
@@ -55,11 +56,24 @@ int lastoccurance(int arr[], int size, int key)
     }
     return ans;
 }
+int totalouccrance(int arr[], int size, int key)
+{
+    int first = firstouccurence(arr, size, key);
+    int last = lastoccurance(arr, size, key);
+    // int total = (last - first) + 1;
+    if (first == -1 || last == -1)
+    {
+        return 0; // Key not present in the array
+    }
+    int total = (last - first) + 1;
+    return total;
+}
 int main()
 {
-    int even[5] = {1, 2, 3, 3, 5};
-    cout << "First ocurrance of 3 is at index  " << firstouccurence(even, 5, 3) << " " << lastoccurance(even, 5, 3) << endl;
-    cout << "Last ocurrance of 3 is at index  " << lastoccurance(even, 5, 3) << endl;
+    int even[8] = {1, 2, 3, 3, 3, 3, 3, 5};
+    cout << "First ocurrance of 3 is at index  " << firstouccurence(even, 8, 3) << " " << lastoccurance(even, 5, 3) << endl;
+    cout << "Last ocurrance of 3 is at index  " << lastoccurance(even, 8, 3) << endl;
+    cout << "Total occurrences of 3 in the array: " << totalouccrance(even, 8, 3) << endl;
 
     return 0;
 }
