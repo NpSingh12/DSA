@@ -60,6 +60,30 @@
       //   }
       //   // data.length = data.length - 1;
       //   console.log(data1);
+      //reverse string
+      // let arr = [1, 2, 3, 5, 4, 6, 8];
+      // let rev = [];
+      // for (let i = arr.length - 1; i >= 0; i--) {
+      //   rev += arr[i];
+      // }
+      // console.log(rev);
+      function peakElement(arr, n) {
+        // let arr = [0, 1, 0];
+        let start = 0;
+        let end = n - 1;
+        while (start < end) {
+          let mid = Math.floor(start + (end - start) / 2);
+          if (arr[mid] < arr[mid + 1]) {
+            start = mid + 1;
+          } else {
+            end = mid;
+          }
+        }
+        return start;
+      }
+      let arr = [0, 2, 5, 1, 0];
+      // let size = sizeof(arr) / sizeof(arr[0]);
+      console.log(peacElement(arr, arr.length));
     </script>
   </body>
 </html>
