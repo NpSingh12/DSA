@@ -29,6 +29,6 @@ int main()
     int even[6] = {2, 4, 6, 8, 10, 12};
     int odd[5] = {3, 5, 7, 9, 11};
     int index = binerysearch(even, 6, 8);
-    cout << "index 8" << index;
+    cout << "index 8 and value " << index;
     return 0;
 }
