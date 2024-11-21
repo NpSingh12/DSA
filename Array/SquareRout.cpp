@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int findRout(int num)
+long long int findRout(int num)
 {
     int s = 0;
     int e = num;
@@ -26,8 +26,26 @@ int findRout(int num)
     }
     return ans;
 }
+double morepresiger(int num, int pointvalue, int square)
+{
+    double facto = 1;
+    double ans = square;
+    for (int i = 0; i < pointvalue; i++)
+    {
+        facto = facto / 10;
+        for (double j = ans; j * j < num; j = j + facto)
+        {
+            ans = j;
+        }
+    }
+    return ans;
+}
 int main()
 {
-    int num = 1000000;
-    cout << "square rout is  " << findRout(num) << endl;
+    int num;
+    cout << "Enter num " << endl;
+    cin >> num;
+    int square = findRout(num);
+    cout << "square rout is  " << morepresiger(num, 4, square) << endl;
+    return 0;
 }
