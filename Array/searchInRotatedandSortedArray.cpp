@@ -21,30 +21,28 @@ int getPivot(int arr[], int size)
 }
 int binerysearch(int *arr, int s, int e, int key)
 {
-    int start = s;
-    int end = e;
-    int mid = start + (end - start) / 2;
-    while (start <= end)
+    int mid = s + (e - s) / 2;
+    while (s <= e)
     {
         if (arr[mid] == key)
         {
             return mid;
         }
-        if (key > arr[mid])
+        if (arr[mid]<key)
         {
-            start = mid + 1;
+            s = mid + 1;
         }
         else
         {
-            end = mid - 1;
+            e = mid - 1;
         }
-        mid = start + (end - start) / 2;
+        mid = s + (e - s) / 2;
     }
     return -1;
 }
 int findPosition(int arr[], int size, int key)
 {
-    int pivot = getPivot(arr, 5);
+    int pivot = getPivot(arr, size);
     if (key >= arr[pivot] && key <= arr[size - 1])
     {
         return binerysearch(arr, pivot, size - 1, key);
@@ -58,6 +56,6 @@ int main()
 {
     int arr[5] = {7, 8, 1, 3, 9};
     // int key = 3;
-    cout << "position is  " << findPosition(arr, 5, 9) << endl;
+    cout << "position is  " << findPosition(arr, 5, 3) << endl;
     return 0;
 }
