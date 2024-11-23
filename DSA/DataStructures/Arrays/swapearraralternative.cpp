@@ -24,5 +24,6 @@ int main()
     getswap(odd, 5);
     printarray(odd, 5);
     cout << endl;
-    getswap return 0;
+    getswap;
+     return 0;
 }

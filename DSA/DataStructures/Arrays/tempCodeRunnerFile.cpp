@@ -1,5 +1,5 @@
 void isdublicate(int arr[])
-// {
+ {
 //     int dub = 0;
 //     for (int i = 0; i < arr.size(); i++)
 //     {
@@ -11,4 +11,4 @@ void isdublicate(int arr[])
 //         dub += i;
 //     }
 //     // return dub;
-// }
+ }

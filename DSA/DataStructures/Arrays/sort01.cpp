@@ -37,5 +37,6 @@ int main()
     int arr[8] = {1, 1, 0, 0, 0, 1, 0, 1};
     issort(arr, 8);
     print(arr, 8);
+    cout<<endl;
     return 0;
 }
