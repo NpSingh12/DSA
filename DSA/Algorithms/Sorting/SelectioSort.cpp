@@ -14,7 +14,7 @@ int selection(int *arr, int n){
     
 }
 int main(){
-    int arr[]={7,8,9,1,0};
+    int arr[]={8, 6, 2, 5, 1};
     int n= sizeof(arr)/sizeof(arr[0]);
     selection(arr,n);
     cout<<" sorted ans "<<endl;
