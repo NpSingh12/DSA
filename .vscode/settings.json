@@ -1,15 +1,8 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "array": "cpp",
-        "deque": "cpp",
-        "string": "cpp",
-        "unordered_map": "cpp",
-        "vector": "cpp",
-        "initializer_list": "cpp",
-        "bitset": "cpp",
-        "chrono": "cpp",
-        "algorithm": "cpp"
+    "code-runner.executorMap": {
+        "cpp": "g++ -g \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe"
 }
