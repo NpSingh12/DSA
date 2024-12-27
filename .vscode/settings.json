@@ -1,8 +1,0 @@
-{
-    "code-runner.executorMap": {
-        "cpp": "g++ -g \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
-    },
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.runInTerminal": true,
-    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe"
-}
