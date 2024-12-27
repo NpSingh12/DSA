@@ -151,16 +151,50 @@ using namespace std;
 // int main(){
 //     int n;
 //     cin>>n;
-//     for(int i=n;i>=0;i--){
-//         for(int j=0;j<i;j++){
+//     for (int  i = 0; i < n; i++)
+//     {
+//         for(int j= 0;j<n-i-1;j++){
 //             cout<<" ";
 //         }
-//         for(int j=0;j>=0;j--){
-//             cout<<"*";
+//         cout<<"*";
+//         if(i!=0){
+
+//         for(int j=0; j<2*i-1;j++){
+//             cout<<" ";
 //         }
-//         for(int j=1;j>=0;j--){
-//             cout<<"*";
+//         cout<<"*";
 //         }
 //         cout<<endl;
 //     }
-// }
+    
+    
+    
+    // int main(){
+    //     int n=4;
+    //     for(int i=0;i<=n;i++){
+    //         for(int j=1;j<=n;j++){
+    //             cout<<j;
+    //         }
+    //         cout<<endl;
+    //     }
+    // }
+    int main(){
+        int n=7789;
+        // cin>>n;
+        int lastdigit=-1;
+        int count=-1;
+        while (n>0)
+        {
+            count=count+1;
+            lastdigit=n%10;
+            n=n/10;
+
+            /* code */
+        cout<<count;
+        cout<<endl;
+        cout<<lastdigit <<endl;
+        cout<<endl;
+        cout<<n <<endl;
+        }
+        
+    }
